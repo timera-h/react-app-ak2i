@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import ButtonProject from "../utils/ButtonProject";
+import ButtonExpertise from "../utils/ButtonExpertise";
+import IconsExpertise from "../utils/IconsExpertise";
+import OurProjects from "../Components/OurProjects";
 
 function HomePage() {
   const HomeMain = styled.section`
@@ -21,7 +24,7 @@ function HomePage() {
   const Subtitle = styled.h2`
     color: white;
     font-weight: 500;
-    font-size: 30px
+    font-size: 30px;
   `;
 
   const Important = styled.span`
@@ -41,14 +44,46 @@ function HomePage() {
   const BlueVioletBloc = styled.article``;
   const YellowBloc = styled.article``;
 
-  const OurExpertise = styled.section`
+  const ContainerOurExpertise = styled.section`
     display: flex;
+    color: white;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    min-height: 85vh;
+    min-height: 100vh;
     background: #7c7caa;
+  `;
+
+  const ContentOurExpertise = styled.article`
+    height: 60vh;
+    width: 85vw;
+    background: #3c3c69;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+  `;
+
+  const OurExpertise = styled.article`
+    height: 40vh;
+    width: 40vw;
+    background: #2d2d4e;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px
+  `;
+
+  const RoundYellow = styled.div`
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #e0cc64;
   `;
 
   return (
@@ -65,9 +100,32 @@ function HomePage() {
         <BlueVioletBloc></BlueVioletBloc>
         <YellowBloc></YellowBloc>
       </Slide>
-      <OurExpertise>
+      <ContainerOurExpertise>
         <Subtitle>NOTRE EXPERTISE</Subtitle>
-      </OurExpertise>
+        <p>
+          L’expérience technique et méthodologique de nos équipes permet une
+          flexibilité accrue dans la gestion de projets.
+        </p>
+        <ContentOurExpertise>
+          <div className="bloc">
+          <OurExpertise>
+            <RoundYellow></RoundYellow>
+            <p>
+              L’expérience technique et méthodologique de nos équipes permet une
+              flexibilité accrue dans la gestion de projets.
+            </p>
+            <p>
+              L’expérience technique et méthodologique de nos équipes.
+              ’expérience technique et méthodologique de nos équipes permet une
+              flexibilité accrue.
+            </p>
+          </OurExpertise>
+          <ButtonExpertise />
+          </div>
+        <IconsExpertise />
+        </ContentOurExpertise>
+      </ContainerOurExpertise>
+      <OurProjects /> 
     </HomeMain>
   );
 }
