@@ -1,59 +1,75 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+import React from "react";
+import styled from "styled-components";
+import ButtonProject from "../utils/ButtonProject";
 
-import { userActions } from '../_actions';
+function HomePage() {
+  const HomeMain = styled.section`
+    font-family: "Montserrat", sans-serif;
+  `;
 
-class HomePage extends React.Component {
-    componentDidMount() {
-        this.props.getUsers();
-    }
+  const Slide = styled.section`
+    width: 100%;
+    min-height: 85vh;
+    background: #2b2b62;
+  `;
 
-    handleDeleteUser(id) {
-        return (e) => this.props.deleteUser(id);
-    }
+  const Title = styled.h1`
+    letter-spacing: 0.1rem;
+    font-size: 30px;
+  `;
 
-    render() {
-        const { user, users } = this.props;
-        return (
-            <div className="col-md-6 col-md-offset-3">
-                <h1>Hi {user.firstName}!</h1>
-                <p>You're logged in with React!!</p>
-                <h3>All registered users:</h3>
-                {users.loading && <em>Loading users...</em>}
-                {users.error && <span className="text-danger">ERROR: {users.error}</span>}
-                {users.items &&
-                    <ul>
-                        {users.items.map((user, index) =>
-                            <li key={user.id}>
-                                {user.firstName + ' ' + user.lastName}
-                                {
-                                    user.deleting ? <em> - Deleting...</em>
-                                    : user.deleteError ? <span className="text-danger"> - ERROR: {user.deleteError}</span>
-                                    : <span> - <a onClick={this.handleDeleteUser(user.id)}>Delete</a></span>
-                                }
-                            </li>
-                        )}
-                    </ul>
-                }
-                <p>
-                    <Link to="/login">Logout</Link>
-                </p>
-            </div>
-        );
-    }
+  const Subtitle = styled.h2`
+    color: white;
+    font-weight: 500;
+    font-size: 30px
+  `;
+
+  const Important = styled.span`
+    color: #b91e38;
+  `;
+
+  const PurpleBloc = styled.article`
+    width: 50%;
+    min-height: 85vh;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  `;
+  const BlueVioletBloc = styled.article``;
+  const YellowBloc = styled.article``;
+
+  const OurExpertise = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 85vh;
+    background: #7c7caa;
+  `;
+
+  return (
+    <HomeMain>
+      <Slide>
+        <PurpleBloc>
+          <Title>
+            Une équipe spécialisée, <br /> Un développement{" "}
+            <Important>sur mesure.</Important>
+          </Title>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <ButtonProject />
+        </PurpleBloc>
+        <BlueVioletBloc></BlueVioletBloc>
+        <YellowBloc></YellowBloc>
+      </Slide>
+      <OurExpertise>
+        <Subtitle>NOTRE EXPERTISE</Subtitle>
+      </OurExpertise>
+    </HomeMain>
+  );
 }
 
-function mapState(state) {
-    const { users, authentication } = state;
-    const { user } = authentication;
-    return { user, users };
-}
-
-const actionCreators = {
-    getUsers: userActions.getAll,
-    deleteUser: userActions.delete
-}
-
-const connectedHomePage = connect(mapState, actionCreators)(HomePage);
-export { connectedHomePage as HomePage };
+export { HomePage };

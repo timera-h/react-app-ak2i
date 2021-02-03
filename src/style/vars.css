@@ -1,0 +1,9 @@
+:root{
+    --purple-blue: #0e1742;
+    --dark : black;
+    --light: white;
+}
+
+section{
+    color: blue
+}
