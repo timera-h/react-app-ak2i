@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ProjectCard from "../utils/ProjectCard";
+import SubTittle from "./SubTittle";
 
 export default function OurProjects() {
   const Container = styled.section`
@@ -11,16 +12,10 @@ export default function OurProjects() {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 100px 
   `;
 
-  const SubTittle = styled.h2`
-    font-weight: 500;
-    font-size: 30px;
-    text-align: center;
-    margin: 30px
-  `;
-
-  const Paragraphe = styled.p`
+  const Paragraph = styled.p`
     width: 25vw;
     text-align: center;
   `;
@@ -47,10 +42,10 @@ export default function OurProjects() {
   return (
     <Container>
         <SubTittle>NOS PROJETS</SubTittle>
-        <Paragraphe>
+        <Paragraph>
           L’expérience technique et méthodologique de nos équipes permet une
           flexibilité accrue dans la gestion de projets.
-        </Paragraphe>
+        </Paragraph>
       <ContainerProjectCard>
         <BlocCard>
           <ProjectCard />
