@@ -4,6 +4,8 @@ import ButtonProject from "../utils/ButtonProject";
 import ButtonExpertise from "../utils/ButtonExpertise";
 import IconsExpertise from "../utils/IconsExpertise";
 import OurProjects from "../Components/OurProjects";
+import OurTeam from "../Components/OurTeam";
+import SubTittle from "../Components/SubTittle";
 
 function HomePage() {
   const HomeMain = styled.section`
@@ -14,16 +16,11 @@ function HomePage() {
     width: 100%;
     min-height: 85vh;
     background: #2b2b62;
+    padding: 100px 
   `;
 
   const Title = styled.h1`
     letter-spacing: 0.1rem;
-    font-size: 30px;
-  `;
-
-  const Subtitle = styled.h2`
-    color: white;
-    font-weight: 500;
     font-size: 30px;
   `;
 
@@ -53,6 +50,7 @@ function HomePage() {
     width: 100%;
     min-height: 100vh;
     background: #7c7caa;
+    padding: 100px 
   `;
 
   const ContentOurExpertise = styled.article`
@@ -101,7 +99,7 @@ function HomePage() {
         <YellowBloc></YellowBloc>
       </Slide>
       <ContainerOurExpertise>
-        <Subtitle>NOTRE EXPERTISE</Subtitle>
+        <SubTittle>NOTRE EXPERTISE</SubTittle>
         <p>
           L’expérience technique et méthodologique de nos équipes permet une
           flexibilité accrue dans la gestion de projets.
@@ -125,7 +123,8 @@ function HomePage() {
         <IconsExpertise />
         </ContentOurExpertise>
       </ContainerOurExpertise>
-      <OurProjects /> 
+      <OurProjects />
+      <OurTeam /> 
     </HomeMain>
   );
 }
