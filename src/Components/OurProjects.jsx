@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ProjectCard from "../utils/ProjectCard";
 import SubTittle from "./SubTittle";
+import Paragraph from "../Components/Paragraph";
 
 export default function OurProjects() {
   const Container = styled.section`
@@ -15,10 +16,7 @@ export default function OurProjects() {
     padding: 100px 
   `;
 
-  const Paragraph = styled.p`
-    width: 25vw;
-    text-align: center;
-  `;
+
 
   const ContainerProjectCard = styled.article`
     display: flex;

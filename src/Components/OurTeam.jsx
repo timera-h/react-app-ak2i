@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SubTittle from "./SubTittle";
+import Paragraph from "./Paragraph"
 
 export default function OurTeam() {
   const Container = styled.section`
@@ -14,12 +15,6 @@ export default function OurTeam() {
     align-items: center
   `;
 
-  const Paragraph = styled.p`
-    width: 35%;
-    diplay: flex;
-    flex-wrap: wrap;
-    text-align: center
-  `;
 
   return (
     <Container>
