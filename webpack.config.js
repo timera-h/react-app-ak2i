@@ -10,7 +10,12 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 loader: 'babel-loader'
-            }
+            },
+            {
+                test : /\.png$/,
+                exclude: /(node_modules)/,
+                loader : 'file-loader'
+              }
         ]
     },
     plugins: [new HtmlWebpackPlugin({
