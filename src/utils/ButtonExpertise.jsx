@@ -13,9 +13,11 @@ export default function ButtonExpertise() {
   `;
 
   const BtnExpertise = styled.button`
-    width: 300px;
-    height: 50px;
+    width: 400px;
+    height: 45px;
     color: white;
+    font-weight: 600;
+    font-size: 18px;
     border: none;
     border-radius: 2px;
     background: #c84b60;

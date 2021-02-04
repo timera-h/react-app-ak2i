@@ -4,9 +4,11 @@ import styled from 'styled-components';
 export default function ButtonProject() {
     const Button = styled.button`
         border: none;
-        background: #e7c452;
-        width: 250px;
-        height: 50px
+        background: #ddb352;
+        width: 450px;
+        height: 60px;
+        font-weight: 500;
+        font-size: 18px
     `;
 
     const Arrow = styled.span`
