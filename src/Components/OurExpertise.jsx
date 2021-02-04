@@ -20,8 +20,9 @@ export default function OurExpertise() {
   `;
 
   const ContentOurExpertise = styled.article`
-    height: 60vh;
-    width: 85vw;
+    height: 75vh;
+    width: 95vw;
+    margin: 20px 0;
     background: #3c3c69;
     border-radius: 5px;
     display: flex;
@@ -31,8 +32,8 @@ export default function OurExpertise() {
   `;
 
   const OurExpertise = styled.article`
-    height: 40vh;
-    width: 40vw;
+    height: 50vh;
+    width: 50vw;
     background: #2d2d4e;
     border-radius: 5px;
     position: relative;
@@ -47,7 +48,7 @@ export default function OurExpertise() {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: #e0cc64;
+    background: #ddb352;
   `;
 
     return (
