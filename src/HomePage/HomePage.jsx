@@ -12,9 +12,8 @@ function HomePage() {
 
   const Slide = styled.section`
     width: 100%;
-    min-height: 85vh;
+    min-height: 95vh;
     background: #2b2b62;
-    padding: 100px;
   `;
 
   const Title = styled.h1`
