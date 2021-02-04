@@ -22,7 +22,7 @@ function HomePage() {
   `;
 
   const Important = styled.span`
-    color: #b91e38;
+    color: #c84b60;
   `;
 
   const PurpleBloc = styled.article`
