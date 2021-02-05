@@ -5,6 +5,8 @@ import SubTittle from "./SubTittle";
 import Paragraph from "../Components/Paragraph";
 
 export default function OurProjects() {
+
+ 
   const Container = styled.section`
     width: 100%;
     min-height: 150vh;
@@ -31,11 +33,7 @@ export default function OurProjects() {
     -o-transform: rotate(45deg); /* Opera */
   `;
 
-  const BlocCard = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `;
+
 
   return (
     <Container>
@@ -45,19 +43,7 @@ export default function OurProjects() {
           flexibilité accrue dans la gestion de projets.
         </Paragraph>
       <ContainerProjectCard>
-        <BlocCard>
-          <ProjectCard />
-          <ProjectCard />
-        </BlocCard>
-        <BlocCard>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-        </BlocCard>
-        <BlocCard>
-          <ProjectCard />
-          <ProjectCard />
-        </BlocCard>
+       <ProjectCard/>
       </ContainerProjectCard>
     </Container>
   );
