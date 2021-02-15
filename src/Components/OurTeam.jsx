@@ -8,13 +8,30 @@ export default function OurTeam() {
     width: 100%;
     min-height: 100vh;
     background: #474280;
-    padding: 100px;
+    padding: 100px 0 0;
     color: white;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center
   `;
 
+  const TeamMember = styled.div `
+    width: 400px;
+    height: 550px;
+    background: white;
+  `;
+
+  const MemberPicture = styled.img `
+    width: 100%;
+    height: 400px
+  `;
+
+  const MemberDetails = styled.div `
+    width: 100%;
+    height: 150px;
+    background: #3e3972
+  `;
 
   return (
     <Container>
@@ -24,6 +41,12 @@ export default function OurTeam() {
         dans son domaine. Grâce aux formations régulières, nous restons à la
         pointe des dernières innovations techniques.
       </Paragraph>
+      <TeamMember>
+        <MemberPicture src="" alt=""/>
+        <MemberDetails>
+
+        </MemberDetails>
+      </TeamMember>
     </Container>
   );
 }
