@@ -34,7 +34,7 @@ export default function OurTeam() {
   `;
 
   return (
-    <Container>
+    <Container id="teams">
       <SubTittle>NOTRE EQUIPE</SubTittle>
       <Paragraph>
         Notre équipe est composée de talents passionnés du digital et experts

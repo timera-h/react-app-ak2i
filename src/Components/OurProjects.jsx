@@ -36,7 +36,7 @@ export default function OurProjects() {
 
 
   return (
-    <Container>
+    <Container id="projects">
         <SubTittle>NOS PROJETS</SubTittle>
         <Paragraph>
           L’expérience technique et méthodologique de nos équipes permet une
