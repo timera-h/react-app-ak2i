@@ -1,0 +1,19 @@
+.containerBtnExpertise{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh;
+    width: 40vw
+}
+
+.btnExpertise{
+    width: 400px;
+    height: 45px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    background: var(--pink-red);
+}

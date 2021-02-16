@@ -1,0 +1,43 @@
+.containerOurExpertise,
+.contentOurExpertise,
+.ourExpertise{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerOurExpertise {
+    color: var(--light);
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: var(--bg-container-expertise);
+}
+
+.contentOurExpertise{
+    flex-direction: column;
+    height: 75vh;
+    width: 95vw;
+    margin: 20px 0;
+    background: var(--bg-content-expertise);
+    border-radius: 5px;
+}
+
+.ourExpertise{
+    height: 50vh;
+    width: 50vw;
+    border-radius: 5px;
+    position: relative;
+    flex-direction: column;
+    padding: 20px;
+    background: var(--bg-our-expertise);
+ 
+}
+
+.yellowCircle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--yellow);
+}

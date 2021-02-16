@@ -1,0 +1,5 @@
+.rectangle {
+    width: 45px;
+    height: 5px;
+    background: var(--btn-content-color);
+}

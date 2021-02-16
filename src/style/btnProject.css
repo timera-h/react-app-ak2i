@@ -1,0 +1,17 @@
+.btnProject {
+    border: none;
+    width: 450px;
+    height: 60px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    align-items: center;
+    font-weight: 500;
+    background: var(--yellow);
+    color: var(--btn-content-color);
+}
+
+.arrowContainer {
+    display: flex
+}
