@@ -1,47 +1,36 @@
 import React from "react";
-import HeaderLinks from "./HeaderLinks";
-import styled from "styled-components";
+import { Link } from "react-scroll";
 
 export default function NavBar() {
-  const Content = styled.div`
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-    flex-wrap: wrap;
-    font-family: "Happy Monkey", cursive;
-    background:  #0e1742;
-    color: white;
-  `;
-
-  const Logo = styled.div`
-    width: 10%;
-    text-align: center;
-    font-weight: 900;
-    font-size: 20px
-  `;
-
-  const ContentLink = styled.div`
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    font-size: 18px
-  `;
-
   return (
-    <Content>
-      <Logo>
+    <div className="containerNav">
+      <div className="logo">
         <strong>
           AK2I <br /> CONSULTING
         </strong>
-      </Logo>
-      <ContentLink>
-        <HeaderLinks to="#">EXPERTISE</HeaderLinks>
-        <HeaderLinks to="#">PROJETS</HeaderLinks>
-        <HeaderLinks to="#">ÉQUIPES</HeaderLinks>
-        <HeaderLinks to="#">CONTACT</HeaderLinks>
-      </ContentLink>
-    </Content>
+      </div>
+      <ul className="listLinks">
+        <li className="link">
+          <Link to="expertise" spy={true} smooth={true}>
+            EXPERTISE
+          </Link>
+        </li>
+        <li className="link">
+          <Link to="projects" spy={true} smooth={true}>
+            PROJETS
+          </Link>
+        </li>
+        <li className="link">
+          <Link to="teams" spy={true} smooth={true}>
+            ÉQUIPES
+          </Link>
+        </li>
+        <li className="link">
+          <Link to="contact" spy={true} smooth={true}>
+            CONTACT
+          </Link>
+        </li>
+      </ul>
+    </div>
   );
 }
