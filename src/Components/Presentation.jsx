@@ -4,7 +4,7 @@ import ButtonProject from "../utils/ButtonProject";
 
 export default function Presentation() {
     return (
-        <section className="slide">
+        <section className="slide" id="presentation">
         <article className="presentationBloc">
           <h1 className="title">
             Une équipe spécialisée, <br /> Un développement{" "}

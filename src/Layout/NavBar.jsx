@@ -3,12 +3,12 @@ import { Link } from "react-scroll";
 
 export default function NavBar() {
   return (
-    <div className="containerNav">
-      <div className="logo">
+    <div  className="containerNav">
+      <Link to="presentation" spy={true} smooth={true} className="logo">
         <strong>
           AK2I <br /> CONSULTING
         </strong>
-      </div>
+      </Link>
       <ul className="listLinks">
         <li className="link">
           <Link to="expertise" spy={true} smooth={true}>
